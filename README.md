@@ -35,24 +35,50 @@ Work in progress (full implementation available in a private repository)
 ---
 
 ## 🔐 Security
-- Authentication flow implementation
-- Email verification for user accounts
-- Secure handling of API keys
-- Privacy policy integration
-- Basic protection against common vulnerabilities
-- Enforced HTTPS for all communications
-- Implemented secure authentication flows (JWT / session-based)
-- Secure storage (localStorage curat)
-- Input validation and sanitization
-- Rate limiting and brute-force protection + rate limiting: exponential backoff (3 fails→15s, 5→5min, 10→30min)
-- Password strength checker (5 levels: WEAK → FORTRESS)
-- HaveIBeenPwned API (k-anonymity, 600M compromised passwords)
-- Cloudflare Turnstile anti-bot (active on HTTPS)
-- XSS protection: escapeHTML(), sanitizeTip(), URL validation
-- RLS on all 12 database tables
-- GDPR compliant: Privacy Policy, Terms, Cookie Policy
-- Secure email & password change (Supabase)
-- Minimum 8 character passwords with complexity requirements
+
+### Authentication & Authorization
+- OAuth 2.0 Google Authentication via Supabase
+- Email + Password authentication with JWT session management
+- Secure email change — confirmation required on both addresses
+- Secure password change — recent session required
+- Password reset via signed email link
+- Account selector forced at every Google login (prompt: select_account)
+
+### Password Security
+- Password strength checker — 5 levels: WEAK → MEDIUM → GOOD → STRONG → FORTRESS
+- HaveIBeenPwned API integration — k-anonymity check against 600M+ compromised passwords
+- Minimum 8 characters with complexity requirements (uppercase, lowercase, digits, special characters)
+- Blacklist of 30 common/forbidden passwords
+- Weak pattern detection (repetitions, sequences, keyboard patterns)
+
+### Anti-Abuse & Bot Protection
+- Cloudflare Turnstile — anti-bot protection (active on HTTPS deployment)
+- Rate limiting with exponential backoff: 3 fails → 15s, 5 fails → 5min, 10 fails → 30min
+- Supabase Attack Protection enabled
+
+### Database Security
+- Row Level Security (RLS) enforced on all 12 PostgreSQL tables
+- Each user accesses exclusively their own data
+- Automatic profile creation via database trigger
+- Cascade delete — complete data removal on account deletion
+- Foreign key constraints on all relational tables
+
+### Frontend Security
+- XSS protection: escapeHTML() global sanitizer on all user inputs
+- Tips sanitizer: strict whitelist (only strong, em, br tags permitted)
+- URL validation: only https:// permitted — blocks javascript:, data:, vbscript:
+- Zero sensitive data in localStorage
+- Local HTTP server (Node.js) replacing insecure file:// protocol
+
+### Legal & Compliance
+- GDPR compliant: Privacy Policy, Terms & Conditions, Cookie Policy
+- Cookie consent banner with Accept/Reject options
+- Explicit consent checkbox at registration
+- Data operator identified (Art. 13 GDPR)
+- Data retention periods documented
+- User rights documented and accessible (access, rectification, deletion, portability)
+- Supabase declared as third-party EU data processor (West EU, Ireland)
+
 ---
 
 ## 🛡 Advanced Security (Planned)
