@@ -152,3 +152,5 @@ Users can:
 
 ## 🔒 Note
 The full source code is maintained in a private repository for security and intellectual property protection.
+
+© 2026 YourRecipe. 
