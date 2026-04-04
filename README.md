@@ -33,6 +33,7 @@ Work in progress (full implementation available in a private repository)
 - Responsive UI with custom design (header, footer, layout)
 - Responsive design complet
 - Admin image management — upload or replace recipe images via URL or file upload, persisted in Supabase Storage
+- Recipes loaded dynamically from Supabase PostgreSQL with local fallback
 
 ---
 
@@ -131,7 +132,7 @@ Users can:
 ---
 
 ## 🗄️ Database Architecture
-- 14 PostgreSQL tables with RLS (added: recipe_images, admins)- Automatic profile creation via database triggers
+- 15 PostgreSQL tables with RLS (added: recipe_images, admins)- Automatic profile creation via database triggers
 - Cascade delete for complete data removal
 - Foreign key constraints on all tables
   
