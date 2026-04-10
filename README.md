@@ -1,5 +1,5 @@
 # Culinardea (Showcase)
-## ! For branding point of viwe I renamed the app from YourRecipe to Culinardea.
+## ! For branding point of view I renamed the app from YourRecipe to Culinardea.
 
 
 ## Overview
