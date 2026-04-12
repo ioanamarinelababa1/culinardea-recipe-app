@@ -14,7 +14,9 @@ https://culinardea.app/
 
 ## Screenshots of the app working and layout
 
-<img width="1178" height="896" alt="presentation_image" src="https://github.com/user-attachments/assets/ddfc5021-e4a7-48ff-9252-2d3b197be8ef" />
+<img width="1376" height="768" alt="presentation_image3" src="https://github.com/user-attachments/assets/7ba9f8c6-8589-49f9-be70-0723fcbddd80" />
+
+
 <img width="1200" height="891" alt="presentation_image2" src="https://github.com/user-attachments/assets/d25ca8e8-62c1-44c1-b767-3406b34d1c65" />
 
 ---
