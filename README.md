@@ -12,12 +12,9 @@ https://culinardea.app/
 
 ---
 
-## Screenshots of the app working and layout
+## Main Page
 
-<img width="1376" height="768" alt="presentation_image3" src="https://github.com/user-attachments/assets/7ba9f8c6-8589-49f9-be70-0723fcbddd80" />
-
-
-<img width="1200" height="891" alt="presentation_image2" src="https://github.com/user-attachments/assets/d25ca8e8-62c1-44c1-b767-3406b34d1c65" />
+<img width="1434" height="773" alt="Captură de ecran din 2026-04-12 la 12 55 08" src="https://github.com/user-attachments/assets/1b2b03ce-e233-4558-bd35-83a361aa3f1b" />
 
 ---
 
@@ -35,6 +32,15 @@ https://culinardea.app/
 - Node.js + Express (backend API server, port 3001)
 - Nodemailer (email service — configured)
 - dotenv (environment variables management)
+
+---
+
+## Screenshots of the app working and layout
+
+<img width="1376" height="768" alt="presentation_image3" src="https://github.com/user-attachments/assets/7ba9f8c6-8589-49f9-be70-0723fcbddd80" />
+
+
+<img width="1200" height="891" alt="presentation_image2" src="https://github.com/user-attachments/assets/d25ca8e8-62c1-44c1-b767-3406b34d1c65" />
 
 ---
 
