@@ -8,7 +8,13 @@ The application focuses on usability, data persistence, and security, offering u
 ## Status
 https://culinardea.app/
 
-## ! For branding point of view I renamed the app from YourRecipe to Culinardea.
+---
+
+## What makes it different
+
+- Recipe filtering system
+- User interaction (favorites / tried / my tips / categories / add their own data)
+- Clean UI focused on usability
 
 ---
 
