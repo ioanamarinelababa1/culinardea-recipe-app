@@ -229,6 +229,10 @@ Users can:
 
 ---
 
+## For further information about the app: contact@culinardea.app 
+
+---
+
 ## Note
 The full source code is maintained in a private repository for security and intellectual property protection.
 
